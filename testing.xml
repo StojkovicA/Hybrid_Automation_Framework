@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Full Regression Suite" parallel="methods" thread-count="2">
+
+    <listeners>
+        <listener class-name="com.project.qa.utils.Listeners" />
+    </listeners>
+
+    <test name="UI and API Regression">
+        <classes>
+            <class name="tests.ui.LoginTest"/>
+            <class name="tests.ui.AlertsTest"/>
+            <class name="tests.ui.DynamicLoadingTest"/>
+            <class name="tests.ui.DropdownTest"/>
+            <class name="tests.ui.FileDownloadTest"/>
+            <class name="tests.api.LoginApiTest"/>
+        </classes>
+    </test>
+</suite>
